@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import PokemonController from "../PokemonController";
 import PokemonViewer from "../PokemonViewer";
 
 function App() {
@@ -14,11 +14,8 @@ function App() {
 
   return (
     <div className="App">
-      {/* TODO: call handleClick when button clicked */}
-      <button onClick={handleClick}>Get Random Pokemon</button>
-      {/* TODO: hand down id as a prop */}
       <PokemonViewer id={id} pokemon={pokemon} setPokemon={setPokemon} />
-      <PokemonController />
+      <PokemonController  handleClick={handleClick}/>
     </div>
   );
 }

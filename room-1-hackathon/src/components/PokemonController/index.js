@@ -1,17 +1,14 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 
-function PokemonController() {
+function PokemonController({handleClick}) {
+  
+
+return(
+
+    <button onClick={handleClick}>Get Random Pokemon</button>
+)
+
 
 }
 
 export default PokemonController;
-
-// {/* TODO: call handleClick when button clicked */ }
-// <button onClick={handleClick}>Get Random Pokemon</button>
-// {/* TODO: hand down id as a prop */ }
-
-
-// function handleClick() {
-//     // TODO: Set id to be random number between 1 and 151
-//     setId(Math.floor(Math.random() * 151) + 1);
-// }
