@@ -1,25 +1,23 @@
 import React, { useEffect } from "react";
 import StatsTable from "../StatsTable/index";
+import useDocumentTitle from "../../hooks/useDocumentTitle";
 
 //`https://pokeapi.co/api/v2/pokemon/${id}`
 function PokemonViewer({ id, pokemon, setPokemon }) {
   // UseEffect
   useEffect(() => {
     async function getPokemon() {
-      let response = await fetch(
-        `${process.env.REACT_APP_POKEMON_URL}${id}`, {
+      let response = await fetch(`${process.env.REACT_APP_POKEMON_URL}${id}`, {
         headers: { accept: "application/json" },
       });
       let data = await response.json();
       setPokemon(data);
-
-      // console.log(pokemon);
     }
     getPokemon();
   }, [id]);
 
-  console.log(pokemon.stats && pokemon.stats[0].base_stat);
-  console.log(pokemon);
+  useDocumentTitle(`Pokemon World - ${pokemon.name?.toUpperCase()}`);
+
   return (
     <div className="container">
       <p>{pokemon.name?.charAt(0).toUpperCase() + pokemon.name?.slice(1)}!</p>
