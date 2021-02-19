@@ -22,7 +22,7 @@ function PokemonViewer({ id, pokemon, setPokemon }) {
   console.log(pokemon);
   return (
     <div className="pokemon-viewer">
-      <p>{pokemon.name}!</p>
+      <p>{pokemon.name?.charAt(0).toUpperCase() + pokemon.name?.slice(1)}!</p>
 
       <div>
         <img src={pokemon.sprites?.front_default} alt="front" />
