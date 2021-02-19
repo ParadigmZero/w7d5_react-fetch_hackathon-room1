@@ -1,10 +1,10 @@
 import React from "react";
 
-function PokemonController({ reducer, text, updateText, searchById }) {
+function PokemonController({ dispatch, updateText }) {
   return (
     <div>
       <div>
-        <button onClick={reducer({ type: "randomSearch" })}>
+        <button onClick={() => dispatch({ type: "randomSearch" })}>
           Get Random Pokemon
         </button>
       </div>
@@ -15,7 +15,7 @@ function PokemonController({ reducer, text, updateText, searchById }) {
             updateText(event);
           }}
         />
-        <button onClick={reducer({ type: "searchById" })}>Search by id</button>
+        <button onClick={() => dispatch({ type: "searchById" })}>Search by id</button>
       </div>
     </div>
   );
