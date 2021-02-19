@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 
 //`https://pokeapi.co/api/v2/pokemon/${id}`
 function PokemonViewer({ id, pokemon, setPokemon }) {
-    
+
     // UseEffect
     useEffect(() => {
         async function getPokemon() {
@@ -22,9 +22,11 @@ function PokemonViewer({ id, pokemon, setPokemon }) {
         <div className="pokemon-viewer">
             <p>{pokemon.name}!</p>
             <p>{pokemon.height}!</p>
-            <p>{pokemon.height}!</p>
-            < img src={pokemon.sprites?.front_default} alt ="front"/>
-            < img src={pokemon.sprites?.back_default} alt ='back'/>
+            < img src={pokemon.sprites?.front_default} alt="front" />
+            < img src={pokemon.sprites?.back_default} alt='back' />
+            <ul>
+
+            </ul>
 
         </div>
     );
