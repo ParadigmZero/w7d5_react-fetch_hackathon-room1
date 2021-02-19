@@ -1,0 +1,34 @@
+<mxfile host="65bd71144e" modified="2021-02-19T10:09:47.804Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.53.2 Chrome/87.0.4280.141 Electron/11.2.1 Safari/537.36" version="14.2.4" etag="lSA5qe1jaTX4GfeX01Ch" type="embed">
+    <diagram id="B39lERMEmyCH2U4-j0wS" name="Page-1">
+        <mxGraphModel dx="564" dy="430" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="190" y="650" width="450" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="GetPokeByID&lt;br&gt;Button" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+                    <mxGeometry x="194" y="670" width="240" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="Name of PokeMon" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="194" y="210" width="440" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="Image Front" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="194" y="270" width="220" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="ImageBack" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="414" y="270" width="220" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="Stats Table" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="190" y="440" width="444" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="InputField for ID" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+                    <mxGeometry x="434" y="670" width="200" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="RandomPokeMe!&lt;br&gt;Button" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+                    <mxGeometry x="194" y="760" width="440" height="60" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
