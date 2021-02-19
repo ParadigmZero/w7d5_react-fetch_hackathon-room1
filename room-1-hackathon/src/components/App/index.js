@@ -29,7 +29,7 @@ function App() {
       <h3>Welcome to Pokemon World!</h3>
       <PokemonViewer id={id} pokemon={pokemon} setPokemon={setPokemon} />
       <PokemonController
-        text={text}
+      
         updateText={updateText}
         searchByIdClick={searchByIdClick}
         handleClick={handleClick}

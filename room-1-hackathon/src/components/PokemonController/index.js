@@ -1,10 +1,10 @@
 import React from "react";
 
-function PokemonController({ handleClick, text, updateText, searchByIdClick }) {
+function PokemonController({ handleClick, updateText, searchByIdClick }) {
   return (
     <div>
       <div>
-        <button onClick={handleClick}>Get Random Pokemon</button>
+        <button data-testid="button" onClick={handleClick}>Get Random Pokemon</button>
       </div>
       <div>
         <input
