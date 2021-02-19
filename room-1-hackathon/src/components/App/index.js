@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import PokemonController from "../PokemonController";
 import PokemonViewer from "../PokemonViewer";
+import './App.css'
 
 function App() {
 
@@ -29,7 +30,7 @@ function App() {
 
 
   return (
-    <div className="App">
+    <div className="main-container">
       <PokemonViewer id={id} pokemon={pokemon} setPokemon={setPokemon} />
       <PokemonController text={text} updateText={updateText} searchByIdClick={searchByIdClick} handleClick={handleClick}/>
       

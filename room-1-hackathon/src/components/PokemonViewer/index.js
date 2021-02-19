@@ -21,7 +21,7 @@ function PokemonViewer({ id, pokemon, setPokemon }) {
   console.log(pokemon.stats && pokemon.stats[0].base_stat);
   console.log(pokemon);
   return (
-    <div className="pokemon-viewer">
+    <div className="container">
       <p>{pokemon.name?.charAt(0).toUpperCase() + pokemon.name?.slice(1)}!</p>
 
       <div>

@@ -2,7 +2,10 @@ import React from "react";
 
 function StatsTable({ stats }) {
   return (
+
+
     <table>
+    <tbody>
       <tr>
         <td>HP</td>
         <td> {stats && stats[0].base_stat}</td>
@@ -27,6 +30,7 @@ function StatsTable({ stats }) {
         <td>Speed</td>
         <td> {stats && stats[5].base_stat}</td>
       </tr>
+      </tbody>
     </table>
   );
 }
