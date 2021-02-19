@@ -6,7 +6,8 @@ function PokemonViewer({ id, pokemon, setPokemon }) {
   // UseEffect
   useEffect(() => {
     async function getPokemon() {
-      let response = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`, {
+      let response = await fetch(
+        `${process.env.REACT_APP_POKEMON_URL}${id}`, {
         headers: { accept: "application/json" },
       });
       let data = await response.json();
